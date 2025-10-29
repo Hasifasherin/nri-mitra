@@ -7,8 +7,6 @@
     background: linear-gradient(to top, #D2F3E5, #FFFFFF);
 
 }
-
-
 /* LEFT SIDE: Content */
 .hero-content {
     position: relative;
@@ -128,10 +126,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
-
-
 
 .whatsapp-icon {
     max-width: 16px;
@@ -417,7 +411,6 @@
 .city img {
     width: 25px;
     height: 25px;
-    /* filter: brightness(0) invert(1); */
 }
 
 /* connect section */
@@ -542,7 +535,6 @@ textarea {
     width: 20px;
     height: 20px;
     object-fit: contain;
-    /* filter: brightness(0) invert(1); */
 }
 
 
@@ -624,22 +616,29 @@ textarea {
     text-align: left;
     padding: 293px;
     animation: bgChange 15s infinite;
-  
+
 
 }
+
 @keyframes bgChange {
-  0%, 33% {
-    background-image: url('photos/Rectangle 2.png');
-    background-size: 100% 1000px;
-  }
-  34%, 66% {
-    background-image: url('photos/Rectangle 2 (1).png');
-    background-size: 100% 1000px;
-  }
-  67%, 100% {
-    background-image: url('photos/Rectangle 2 (2).png');
-    background-size: 100% 1000px;
-  }
+
+    0%,
+    33% {
+        background-image: url('photos/Rectangle 2.png');
+        background-size: 100% 1000px;
+    }
+
+    34%,
+    66% {
+        background-image: url('photos/Rectangle 2 (1).png');
+        background-size: 100% 1000px;
+    }
+
+    67%,
+    100% {
+        background-image: url('photos/Rectangle 2 (2).png');
+        background-size: 100% 1000px;
+    }
 }
 
 .overlay-about {
@@ -710,7 +709,7 @@ textarea {
     width: 320px;
     height: auto;
     border-radius: 20px;
-  animation: changeLarge 12s infinite;
+    animation: changeLarge 12s infinite;
 }
 
 .abouts-img.small {
@@ -718,32 +717,43 @@ textarea {
     height: auto;
     margin-left: 167px;
     margin-top: -115px;
-  animation: changeSmall 12s infinite;
+    animation: changeSmall 12s infinite;
 }
 
 @keyframes changeLarge {
-  0%, 33% {
-    content: url('photos/Rectangle 3 (1).png');
-  }
-  34%, 66% {
-    content: url('photos/Rectangle 3 (2).png');
-  }
-  67%, 100% {
-    content: url('photos/Rectangle 3 (3).png');
-  }
+
+    0%,
+    33% {
+        content: url('photos/Rectangle 3 (1).png');
+    }
+
+    34%,
+    66% {
+        content: url('photos/Rectangle 3 (2).png');
+    }
+
+    67%,
+    100% {
+        content: url('photos/Rectangle 3 (3).png');
+    }
 }
 
-/* ✨ Small image animation */
 @keyframes changeSmall {
-  0%, 33% {
-    content: url('photos/Rectangle 9.png');
-  }
-  34%, 66% {
-    content: url('photos/Rectangle\ 9\ \(1\).png');
-  }
-  67%, 100% {
-    content: url('photos/Rectangle\ 17.png');
-  }
+
+    0%,
+    33% {
+        content: url('photos/Rectangle 9.png');
+    }
+
+    34%,
+    66% {
+        content: url('photos/Rectangle\ 9\ \(1\).png');
+    }
+
+    67%,
+    100% {
+        content: url('photos/Rectangle\ 17.png');
+    }
 }
 
 .abouts-content {
@@ -766,7 +776,7 @@ textarea {
     line-height: 1.7;
     text-align: justify;
     max-width: 554px;
-    
+
 }
 
 
@@ -872,18 +882,24 @@ textarea {
 }
 
 @keyframes contactBg {
-  0%, 33% {
-    background-image: url('photos/Rectangle\ 6\ \(1\).png');
-    background-size: 100% 1000px;
-  }
-  34%, 66% {
-    background-image: url('photos/Rectangle\ 6\ \(2\).png');
-    background-size: 100% 1000px;
-  }
-  67%, 100% {
-    background-image: url('photos/Rectangle\ 6\ \(3\).png');
-    background-size: 100% 1000px;
-  }
+
+    0%,
+    33% {
+        background-image: url('photos/Rectangle\ 6\ \(1\).png');
+        background-size: 100% 1000px;
+    }
+
+    34%,
+    66% {
+        background-image: url('photos/Rectangle\ 6\ \(2\).png');
+        background-size: 100% 1000px;
+    }
+
+    67%,
+    100% {
+        background-image: url('photos/Rectangle\ 6\ \(3\).png');
+        background-size: 100% 1000px;
+    }
 }
 
 
@@ -1008,7 +1024,6 @@ textarea {
     width: 20px;
     height: 20px;
     object-fit: contain;
-    /* filter: brightness(0) invert(1); */
 }
 
 
@@ -1023,463 +1038,468 @@ textarea {
 
 
 
- /* .city-section */
+/* .city-section */
 
 /* Heading */
 .city-section1 h2 {
-  font-family: baloo2;
-  font-weight: 700;
-  color: #025B4B;
-  font-size: 59px;
-  margin-bottom: 3rem;
+    font-family: baloo2;
+    font-weight: 700;
+    color: #025B4B;
+    font-size: 59px;
+    margin-bottom: 3rem;
 }
 
 /* Layout container */
 .city-content1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 140px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    flex-wrap: wrap;
 }
 
 /* Map */
 .map-container1 {
-  position: relative;
+    position: relative;
 }
 
 .india-map1 {
-  width: 450px;
-  max-width: 100%;
-  filter: grayscale(100%);
+    width: 450px;
+    max-width: 100%;
+    filter: grayscale(100%);
 }
 
 /* City dots1 */
 .city-dot1 {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    transform: translate(-50%, -50%);
 }
 
-/* Adjust Maharashtra positions */
 .city-dot1.mumbai {
-  top: 59%;
-  left: 21%;
+    top: 59%;
+    left: 21%;
 }
 
 .city-dot1.pune {
-  top: 62%;
-  left: 16.6%;
+    top: 62%;
+    left: 16.6%;
 }
 
 /* City Info Section */
 .city-infos1 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 100px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 .city-cards1 {
-  text-align: center;
-  max-width: 220px;
+    text-align: center;
+    max-width: 220px;
 }
 
 .city-icon1 {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  margin: 0 auto 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .city-icon1 img {
-  width: 54px;
-  height: 54px;
+    width: 54px;
+    height: 54px;
 }
 
 /* Icon background colors */
 .city-icon1.purple {
-  background-color: #7b5eff;
+    background-color: #7b5eff;
 }
 
 .city-icon1.yellow {
-  background-color: #f9cd00;
+    background-color: #f9cd00;
 }
 
 .city-card1 h3 {
-  font-size: 22px;
-  color: #000;
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .city-card1 p {
-  color: #666;
-  font-size: 15px;
+    color: #666;
+    font-size: 15px;
 }
 
 /* Coming Soon */
 .coming-soon1 {
-  position: absolute;
-  z-index: 10;
-  color: #ff0000;
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 300px;
-  line-height: 1.5;
+    position: absolute;
+    z-index: 10;
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 300px;
+    line-height: 1.5;
 }
 
 
 .skyline,
 .skyline1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 130px;
-  background: url("photos/Group 481810.png") repeat-x center bottom;
-  background-size: contain; /* show full skyline */
-  opacity: 0.4;
-  z-index: 2;
-  pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: url("photos/Group 481810.png") repeat-x center bottom;
+    background-size: contain;
+    opacity: 0.4;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* --- COMMON WRAPPER --- */
 .city-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* fixed height, no overlay below */
-  overflow: hidden; /* prevent overlapping sections */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* --- FIRST SECTION (Older version) --- */
 .city-section1 {
-  position: absolute;
-  top: 0;
-   padding-bottom: 300px; 
-  left: 0;
-  width: 100%;
-  opacity: 1;
-  z-index: 5;
-  background: linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
-  text-align: center;
-  padding: 80px 20px 180px;
-  animation: fadeSlideOut 8s ease-in-out infinite;
-  height: 100%;
-  overflow: visible;
+    position: absolute;
+    top: 0;
+    padding-bottom: 300px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 5;
+    background: linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
+    text-align: center;
+    padding: 80px 20px 180px;
+    animation: fadeSlideOut 8s ease-in-out infinite;
+    height: 100%;
+    overflow: visible;
 }
 
 /* --- SECOND SECTION (New version) --- */
 .city-section {
-  position: relative;
-  top: 0;
-   padding-bottom: 400px; 
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  z-index: 5;
-  background:linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
-  text-align: center;
-  padding: 80px 100px;
-  font-family: 'Poppins', sans-serif;
-  animation: fadeSlideIn 8s ease-in-out infinite;
-  min-height: 100%;
-  overflow: visible;
+    position: relative;
+    top: 0;
+    padding-bottom: 400px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 5;
+    background: linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
+    text-align: center;
+    padding: 80px 100px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeSlideIn 8s ease-in-out infinite;
+    min-height: 100%;
+    overflow: visible;
 }
 
 /* City Header */
 .city-header h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0C594E;
-  
+    font-size: 40px;
+    font-weight: 600;
+    color: #0C594E;
+
 }
 
 .city-header p {
-  color: #555;
-  margin-top: 10px;
-  font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* City Content */
 .city-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 30px;
 }
 
 .map-container {
-  position: relative;
-  width: 600px;
+    position: relative;
+    width: 600px;
 }
 
 .india-map {
-  width: 450px;
-  max-width: 100%;
-  filter: grayscale(100%);
-  position: relative;
+    width: 450px;
+    max-width: 100%;
+    filter: grayscale(100%);
+    position: relative;
 }
 
 /* City Dots */
 .city-dot {
-  position: absolute;
-  width: 12px;
-  height: 12px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
 }
 
-/* Adjusted city positions for 450px map */
 .city-dot.delhi {
-  bottom: 340px;
-  left: 240px;
+    bottom: 340px;
+    left: 240px;
 }
 
 .city-dot.mumbai {
-  bottom: 160px;
-  left: 170px;
+    bottom: 160px;
+    left: 170px;
 }
 
 .city-dot.Pune {
-  bottom: 140px;
-  left: 185px;
+    bottom: 140px;
+    left: 185px;
 }
 
 .city-dot.Bangalore {
-  bottom: 90px;
-  left: 205px;
+    bottom: 90px;
+    left: 205px;
 }
 
 .city-dot.Chennai {
-  bottom: 100px;
-  left: 260px;
+    bottom: 100px;
+    left: 260px;
 }
 
 .city-dot.Chandigarh {
-  bottom: 370px;
-  left: 220px;
+    bottom: 370px;
+    left: 220px;
 }
 
 .city-dot.Ahmedabad {
-  bottom: 220px;
-  left: 160px;
+    bottom: 220px;
+    left: 160px;
 }
 
 .city-dot.Indore {
-  bottom: 200px;
-  left: 190px;
+    bottom: 200px;
+    left: 190px;
 }
 
 .city-dot.Kochi {
-  bottom: 60px;
-  left: 210px;
+    bottom: 60px;
+    left: 210px;
 }
 
 .city-dot.Kolkata {
-  bottom: 250px;
-  left: 340px;
+    bottom: 250px;
+    left: 340px;
 }
 
 .city-dot.Coimbatore {
-  bottom: 85px;
-  left: 230px;
+    bottom: 85px;
+    left: 230px;
 }
 
 .city-dot.hyderbad {
-  bottom: 150px;
-  left: 230px;
+    bottom: 150px;
+    left: 230px;
 }
 
 /* City Grid */
 .city-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 110px 87px;
-  justify-items: center;
-  max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 110px 87px;
+    justify-items: center;
+    max-width: 600px;
 }
 
 .city-card {
-  text-align: center;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 
 .city-card.active {
-  opacity: 1;
+    opacity: 1;
 }
 
 .city-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 /* coming soon image */
 .city-icon .coming-badge {
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 45px;
-  height: auto;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: auto;
 }
 
 .img-a {
-  width: 38px;
-  height: 55px;
+    width: 38px;
+    height: 55px;
 }
 
 .img-b {
-  width: 51px;
-  height: 49px;
+    width: 51px;
+    height: 49px;
 }
 
 .img-c {
-  width: 65px;
-  height: 47px;
+    width: 65px;
+    height: 47px;
 }
 
 .img-d {
-  width: 60px;
-  height: 46px;
+    width: 60px;
+    height: 46px;
 }
 
 .img-e {
-  width: 57px;
-  height: 45px;
+    width: 57px;
+    height: 45px;
 }
 
 .img-f {
-  width: 41px;
-  height: 48px;
+    width: 41px;
+    height: 48px;
 }
 
 .img-g {
-  width: 50px;
-  height: 41px;
+    width: 50px;
+    height: 41px;
 }
 
 .img-h {
-  width: 48px;
-  height: 48px;
+    width: 48px;
+    height: 48px;
 }
 
 .img-i {
-  width: 50px;
-  height: 43px;
+    width: 50px;
+    height: 43px;
 }
 
 .city-card h3 {
-  font-weight: 600;
-  margin-top: 10px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .city-card p {
-  font-size: 13px;
-  color: #666;
-  width: 150px;
+    font-size: 13px;
+    color: #666;
+    width: 150px;
 }
 
 /* Color Circles */
 .purple {
-  background-color: #A48DFF;
+    background-color: #A48DFF;
 }
 
 .yellow {
-  background-color: #FFD740;
+    background-color: #FFD740;
 }
 
 .light-blue {
-  background-color: #CFE8FF;
+    background-color: #CFE8FF;
 }
 
 .pink {
-  background-color: #F2D7F7;
+    background-color: #F2D7F7;
 }
 
 .red {
-  background-color: #F9CACA;
+    background-color: #F9CACA;
 }
 
 .beige {
-  background-color: #FBEEDB;
+    background-color: #FBEEDB;
 }
 
 .sky-blue {
-  background-color: #CFEAFF;
+    background-color: #CFEAFF;
 }
 
 .green {
-  background-color: #C8F0E4;
+    background-color: #C8F0E4;
 }
 
 .pale-yellow {
-  background-color: #FFF3B0;
+    background-color: #FFF3B0;
 }
 
 .mint {
-  background-color: #D3F5D1;
+    background-color: #D3F5D1;
 }
 
 .coral {
-  background-color: #FFD7C4;
+    background-color: #FFD7C4;
 }
 
 .orange {
-  background-color: #FB8700;
+    background-color: #FB8700;
 }
 
-
-
-
-
-/* --- ANIMATIONS --- */
 @keyframes fadeSlideOut {
-  0%, 45% {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 2;
-  }
-  50%, 95% {
-    opacity: 0;
-    transform: translateX(-100%);
-    z-index: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 2;
-  }
+
+    0%,
+    45% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+    }
+
+    50%,
+    95% {
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+    }
 }
 
 @keyframes fadeSlideIn {
-  0%, 45% {
-    opacity: 0;
-    transform: translateX(100%);
-    z-index: 1;
-  }
-  50%, 95% {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-    z-index: 1;
-  }
+
+    0%,
+    45% {
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    50%,
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 1;
+    }
 }
+
+
