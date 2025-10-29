@@ -5,37 +5,39 @@
     width: 100%;
     height: 790px;
     background: linear-gradient(to top, #D2F3E5, #FFFFFF);
-  
+
 }
 
 
 /* LEFT SIDE: Content */
 .hero-content {
-  position: relative;
-  flex: 1 1 50%;
-  padding: 60px 75px;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden; 
+    position: relative;
+    flex: 1 1 50%;
+    padding: 60px 75px;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .hero-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("photos/Vector (19).svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.07; 
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("photos/Vector (19).svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.07;
+    z-index: 0;
 }
+
 
 /* universal selector */
 .hero-content * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -87,7 +89,7 @@
 
 .btn {
     display: inline-block;
-    background:#01DC82;
+    background: #01DC82;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -190,7 +192,7 @@
 /* Why Section */
 .why-section {
     background-color: #005653;
-    background-image: url("photos/Frame.png"); 
+    background-image: url("photos/Frame.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -554,3 +556,930 @@ textarea {
 
 
 
+
+
+
+
+/* ======================about.html============================== */
+
+/*  Baloo2 font */
+@font-face {
+    font-family: 'Baloo2';
+    src: url('fonts/Baloo2-Regular.ttf') format('truetype');
+
+}
+
+/* Roboto font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+
+}
+
+/* Navbar */
+.navbar-about {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    font-family: poppinsregular;
+}
+
+
+.logo-about {
+    max-width: 188px;
+    height: 60px;
+}
+
+.nav-links-about {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links-about a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links-about a:hover,
+.nav-links-about a.active {
+    color: #01DC82;
+    border-bottom: 3px solid #01DC82;
+}
+
+/* Hero Section */
+.hero-about {
+    height: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: left;
+    padding: 293px;
+    animation: bgChange 15s infinite;
+  
+
+}
+@keyframes bgChange {
+  0%, 33% {
+    background-image: url('photos/Rectangle 2.png');
+    background-size: 100% 1000px;
+  }
+  34%, 66% {
+    background-image: url('photos/Rectangle 2 (1).png');
+    background-size: 100% 1000px;
+  }
+  67%, 100% {
+    background-image: url('photos/Rectangle 2 (2).png');
+    background-size: 100% 1000px;
+  }
+}
+
+.overlay-about {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content-about {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-content-about h1 {
+    font-family: 'Baloo2', sans-serif;
+    font-size: 88px;
+    margin-bottom: 2.5rem;
+    color: #FFFFFF;
+    max-width: 632px;
+    height: 93px;
+    font-weight: 900;
+}
+
+
+
+.hero-content-about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+    height: 53px;
+    max-width: 565px;
+    line-height: 100%;
+}
+
+/* about us */
+.abouts-section {
+    position: relative;
+    background: url('photos/Mask\ group.png') center center/cover no-repeat;
+    margin-top: -150px;
+    padding: 200px 10% 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.abouts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.abouts-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.abouts-img.large {
+    width: 320px;
+    height: auto;
+    border-radius: 20px;
+  animation: changeLarge 12s infinite;
+}
+
+.abouts-img.small {
+    width: 250px;
+    height: auto;
+    margin-left: 167px;
+    margin-top: -115px;
+  animation: changeSmall 12s infinite;
+}
+
+@keyframes changeLarge {
+  0%, 33% {
+    content: url('photos/Rectangle 3 (1).png');
+  }
+  34%, 66% {
+    content: url('photos/Rectangle 3 (2).png');
+  }
+  67%, 100% {
+    content: url('photos/Rectangle 3 (3).png');
+  }
+}
+
+/* ✨ Small image animation */
+@keyframes changeSmall {
+  0%, 33% {
+    content: url('photos/Rectangle 9.png');
+  }
+  34%, 66% {
+    content: url('photos/Rectangle\ 9\ \(1\).png');
+  }
+  67%, 100% {
+    content: url('photos/Rectangle\ 17.png');
+  }
+}
+
+.abouts-content {
+    max-width: 600px;
+}
+
+.abouts-content h2 {
+    font-family: baloo2;
+    font-weight: 700;
+    color: #025B4B;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    max-width: 290px;
+}
+
+.abouts-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 554px;
+    
+}
+
+
+.why-section h1 {
+    font-family: baloo2;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 104px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+    opacity: 1;
+}
+
+/* service section */
+
+.about-services-section {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url("photos/image\ 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.about-services-container h2 {
+    font-family: baloo2;
+    font-weight: 700;
+    color: #025B4B;
+    font-size: 59px;
+    margin-bottom: 3rem;
+}
+
+/* --- Top Grid --- */
+.about-top-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 287px);
+    justify-content: center;
+    column-gap: 48px;
+    margin-bottom: 60px;
+}
+
+/* --- Bottom Grid --- */
+.about-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 287px);
+    justify-content: center;
+    column-gap: 48px;
+}
+
+.about-card {
+    width: 257px;
+    height: 189px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-card img {
+    width: 48px;
+    margin-bottom: 15px;
+}
+
+.about-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* connect section */
+/* Section background */
+.about-connect-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 80px 100px;
+    font-family: Poppins;
+    min-height: 100vh;
+    animation: contactBg 15s infinite;
+}
+
+@keyframes contactBg {
+  0%, 33% {
+    background-image: url('photos/Rectangle\ 6\ \(1\).png');
+    background-size: 100% 1000px;
+  }
+  34%, 66% {
+    background-image: url('photos/Rectangle\ 6\ \(2\).png');
+    background-size: 100% 1000px;
+  }
+  67%, 100% {
+    background-image: url('photos/Rectangle\ 6\ \(3\).png');
+    background-size: 100% 1000px;
+  }
+}
+
+
+/* Form container */
+.about-overlay-form {
+    background: rgba(0, 86, 83, 0.8);
+    padding: 50px 60px;
+    max-width: 650px;
+    width: 100%;
+    color: #fff;
+
+}
+
+.about-overlay-form h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Baloo2;
+}
+
+.about-overlay-form p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    text-align: center;
+    max-width: 629px;
+    height: 69px;
+    line-height: 23px;
+    font-family: Roboto;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.about-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.about-form-group input,
+.about-form-group textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.about-full-width {
+    width: 100%;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #00c875;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00b86a;
+}
+
+/* Footer Section */
+.about-footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Circular border for icons */
+.about-footer-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1.05px solid black;
+    border-radius: 50%;
+}
+
+/* Icon images */
+.about-footer-social-icons a img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    /* filter: brightness(0) invert(1); */
+}
+
+
+
+/* Copyright */
+.about-footer p {
+    font-size: 16px;
+    opacity: 80%;
+    margin: 0;
+}
+
+
+
+
+ /* .city-section */
+
+/* Heading */
+.city-section1 h2 {
+  font-family: baloo2;
+  font-weight: 700;
+  color: #025B4B;
+  font-size: 59px;
+  margin-bottom: 3rem;
+}
+
+/* Layout container */
+.city-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  flex-wrap: wrap;
+}
+
+/* Map */
+.map-container1 {
+  position: relative;
+}
+
+.india-map1 {
+  width: 450px;
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+
+/* City dots1 */
+.city-dot1 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  transform: translate(-50%, -50%);
+}
+
+/* Adjust Maharashtra positions */
+.city-dot1.mumbai {
+  top: 59%;
+  left: 21%;
+}
+
+.city-dot1.pune {
+  top: 62%;
+  left: 16.6%;
+}
+
+/* City Info Section */
+.city-infos1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.city-cards1 {
+  text-align: center;
+  max-width: 220px;
+}
+
+.city-icon1 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-icon1 img {
+  width: 54px;
+  height: 54px;
+}
+
+/* Icon background colors */
+.city-icon1.purple {
+  background-color: #7b5eff;
+}
+
+.city-icon1.yellow {
+  background-color: #f9cd00;
+}
+
+.city-card1 h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.city-card1 p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* Coming Soon */
+.coming-soon1 {
+  position: absolute;
+  z-index: 10;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 300px;
+  line-height: 1.5;
+}
+
+
+.skyline,
+.skyline1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background: url("photos/Group 481810.png") repeat-x center bottom;
+  background-size: contain; /* show full skyline */
+  opacity: 0.4;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* --- COMMON WRAPPER --- */
+.city-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* fixed height, no overlay below */
+  overflow: hidden; /* prevent overlapping sections */
+}
+
+/* --- FIRST SECTION (Older version) --- */
+.city-section1 {
+  position: absolute;
+  top: 0;
+   padding-bottom: 300px; 
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 5;
+  background: linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
+  text-align: center;
+  padding: 80px 20px 180px;
+  animation: fadeSlideOut 8s ease-in-out infinite;
+  height: 100%;
+  overflow: visible;
+}
+
+/* --- SECOND SECTION (New version) --- */
+.city-section {
+  position: relative;
+  top: 0;
+   padding-bottom: 400px; 
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 5;
+  background:linear-gradient(180deg, #fff6f2 0%, #ffeeeb 100%);
+  text-align: center;
+  padding: 80px 100px;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeSlideIn 8s ease-in-out infinite;
+  min-height: 100%;
+  overflow: visible;
+}
+
+/* City Header */
+.city-header h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0C594E;
+  
+}
+
+.city-header p {
+  color: #555;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* City Content */
+.city-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.map-container {
+  position: relative;
+  width: 600px;
+}
+
+.india-map {
+  width: 450px;
+  max-width: 100%;
+  filter: grayscale(100%);
+  position: relative;
+}
+
+/* City Dots */
+.city-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+
+/* Adjusted city positions for 450px map */
+.city-dot.delhi {
+  bottom: 340px;
+  left: 240px;
+}
+
+.city-dot.mumbai {
+  bottom: 160px;
+  left: 170px;
+}
+
+.city-dot.Pune {
+  bottom: 140px;
+  left: 185px;
+}
+
+.city-dot.Bangalore {
+  bottom: 90px;
+  left: 205px;
+}
+
+.city-dot.Chennai {
+  bottom: 100px;
+  left: 260px;
+}
+
+.city-dot.Chandigarh {
+  bottom: 370px;
+  left: 220px;
+}
+
+.city-dot.Ahmedabad {
+  bottom: 220px;
+  left: 160px;
+}
+
+.city-dot.Indore {
+  bottom: 200px;
+  left: 190px;
+}
+
+.city-dot.Kochi {
+  bottom: 60px;
+  left: 210px;
+}
+
+.city-dot.Kolkata {
+  bottom: 250px;
+  left: 340px;
+}
+
+.city-dot.Coimbatore {
+  bottom: 85px;
+  left: 230px;
+}
+
+.city-dot.hyderbad {
+  bottom: 150px;
+  left: 230px;
+}
+
+/* City Grid */
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 110px 87px;
+  justify-items: center;
+  max-width: 600px;
+}
+
+.city-card {
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.city-card.active {
+  opacity: 1;
+}
+
+.city-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* coming soon image */
+.city-icon .coming-badge {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: auto;
+}
+
+.img-a {
+  width: 38px;
+  height: 55px;
+}
+
+.img-b {
+  width: 51px;
+  height: 49px;
+}
+
+.img-c {
+  width: 65px;
+  height: 47px;
+}
+
+.img-d {
+  width: 60px;
+  height: 46px;
+}
+
+.img-e {
+  width: 57px;
+  height: 45px;
+}
+
+.img-f {
+  width: 41px;
+  height: 48px;
+}
+
+.img-g {
+  width: 50px;
+  height: 41px;
+}
+
+.img-h {
+  width: 48px;
+  height: 48px;
+}
+
+.img-i {
+  width: 50px;
+  height: 43px;
+}
+
+.city-card h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.city-card p {
+  font-size: 13px;
+  color: #666;
+  width: 150px;
+}
+
+/* Color Circles */
+.purple {
+  background-color: #A48DFF;
+}
+
+.yellow {
+  background-color: #FFD740;
+}
+
+.light-blue {
+  background-color: #CFE8FF;
+}
+
+.pink {
+  background-color: #F2D7F7;
+}
+
+.red {
+  background-color: #F9CACA;
+}
+
+.beige {
+  background-color: #FBEEDB;
+}
+
+.sky-blue {
+  background-color: #CFEAFF;
+}
+
+.green {
+  background-color: #C8F0E4;
+}
+
+.pale-yellow {
+  background-color: #FFF3B0;
+}
+
+.mint {
+  background-color: #D3F5D1;
+}
+
+.coral {
+  background-color: #FFD7C4;
+}
+
+.orange {
+  background-color: #FB8700;
+}
+
+
+
+
+
+/* --- ANIMATIONS --- */
+@keyframes fadeSlideOut {
+  0%, 45% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+  }
+  50%, 95% {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+  }
+}
+
+@keyframes fadeSlideIn {
+  0%, 45% {
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  50%, 95% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+}
