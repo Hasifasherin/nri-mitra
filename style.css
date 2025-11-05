@@ -656,16 +656,21 @@ div {
   .hero-content h1 {
     font-size: 36px;
     line-height: 48px;
+    width: 100%;
   }
 
   .hero-content p {
     font-size: 15px;
+    width: 100% ;
   }
 
   .hero-image img {
     display: none;
   }
 
+  .hero-content::before {
+    display: none;
+  }
   .social-icons {
     display: none;
   }
@@ -721,6 +726,10 @@ div {
     height: auto;
   }
 
+  .hero-content::before {
+    display: none;
+  }
+
   .hero-main {
     padding-top: 10px !important;
     margin-top: 0 !important;
@@ -728,11 +737,13 @@ div {
 
   .hero-content {
     margin-top: 0 !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
   }
 
   .hero-content h1 {
     margin-top: 0 !important;
+    width: 100%;
+    
   }
 
 
@@ -967,6 +978,10 @@ div {
     gap: 40px;
   }
 
+  .card {
+    width: 237px;
+    height: 186px;
+  }
   .services-left h2 {
     font-size: 40px;
     margin-bottom: 40px;
@@ -975,16 +990,22 @@ div {
   .top-grid,
   .bottom-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-items: center;
     width: 100%;
+    padding-left: 15%;
   }
 
-  .services-right img {
-    max-width: 400px;
+  .services-right {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .services-right img {
+    max-width: 537px;
+    width: 100%;
   }
 }
 
@@ -1033,6 +1054,7 @@ div {
     gap: 20px;
     justify-items: center;
     width: 100%;
+    padding: 0;
   }
 
   .card {
