@@ -11,50 +11,54 @@
 
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <!-- left-side -->
-        <div class="hero-content">
-            <header class="header">
-                <div class="logo">
-                    <img src="photos/nri 1.svg" alt="NRI Mitra Logo">
-                </div>
-                
+   <!-- HERO SECTION -->
+<section class="hero">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="photos/nri 1.svg" alt="NRI Mitra Logo">
+        </a>
+      </div>
+  
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="hero-text">
-                <h1>Simply dummy printing and lorem I industry</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever.</p>
-                <a href="#" class="btn">Contact Now</a>
-            </div>
-        </div>
-
-        <!-- right side -->
-        <div class="hero-image">
-            <img src="photos/Rectangle 1.png" alt="Hero Background">
-            <div class="social-icons">
-                <a href="#"><img src="photos/ic_outline-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon"></a>
-                <a href="#"><img src="photos/Group.svg" alt="telegram" class="telegram-icon"></a>
-                <a href="#"><img src="photos/Vector.svg" alt="Facebook" class="facebook-icon"></a>
-                <a href="#"><img src="photos/Vector (1).svg" alt="instagram" class="instagram-icon"></a>
-                <a href="#"><img src="photos/ri_linkedin-fill.svg" alt="LinkedIn" class="linkedin-icon"></a>
-            </div>
-        </div>
-    </section>
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+      <nav class="nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#connect-section">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <div class="social-icons">
+        <a href="#"><img src="photos/ic_outline-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon"></a>
+        <a href="#"><img src="photos/Group.svg" alt="Telegram" class="telegram-icon"></a>
+        <a href="#"><img src="photos/Vector.svg" alt="Facebook" class="facebook-icon"></a>
+        <a href="#"><img src="photos/Vector (1).svg" alt="Instagram" class="instagram-icon"></a>
+        <a href="#"><img src="photos/ri_linkedin-fill.svg" alt="LinkedIn" class="linkedin-icon"></a>
+      </div>
+    </header>
+  
+    <div class="hero-main">
+      <!-- LEFT SIDE -->
+      <div class="hero-content">
+        <h1>Simply dummy printing and lorem I industry</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever.</p>
+        <a href="#connect-section" class="btn">Contact Now</a>
+      </div>
+  
+      <!-- RIGHT SIDE -->
+      <div class="hero-image">
+        <img src="photos/Rectangle 1.png" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+  
 
     <section class="about-section">
         <div class="about-image">
@@ -122,7 +126,7 @@
     </section>
 
     <!-- OUR SERVICES SECTION -->
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="services-container">
             <div class="services-left">
                 <h2>Our Services</h2>
@@ -189,7 +193,7 @@
     </div>
 
     <!-- connect section -->
-    <section class="connect-section">
+    <section id="connect-section" class="connect-section">
         <!-- form section -->
         <div class="overlay-form">
             <h2>Lets get Connected</h2>
